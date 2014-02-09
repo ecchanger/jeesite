@@ -43,7 +43,7 @@ public class FrontStaticInfoController extends BaseController{
 		Site site = CmsUtils.getSite(Site.defaultSiteId());
 		model.addAttribute("site", site);
 
-		return "modules/cms/front/themes/"+site.getTheme()+"/fontTeam";
+		return "modules/cms/front/themes/"+site.getTheme()+"/frontTeam";
 	}
 
 	@RequestMapping(value = "/job", method=RequestMethod.GET)
@@ -51,7 +51,7 @@ public class FrontStaticInfoController extends BaseController{
 		Site site = CmsUtils.getSite(Site.defaultSiteId());
 		model.addAttribute("site", site);
 
-		return "modules/cms/front/themes/"+site.getTheme()+"/fontJob";
+		return "modules/cms/front/themes/"+site.getTheme()+"/frontJob";
 	}
 
 	@RequestMapping(value = "/law", method=RequestMethod.GET)
@@ -59,7 +59,7 @@ public class FrontStaticInfoController extends BaseController{
 		Site site = CmsUtils.getSite(Site.defaultSiteId());
 		model.addAttribute("site", site);
 
-		return "modules/cms/front/themes/"+site.getTheme()+"/fontLaw";
+		return "modules/cms/front/themes/"+site.getTheme()+"/frontLaw";
 	}
 
 
@@ -68,7 +68,7 @@ public class FrontStaticInfoController extends BaseController{
         Site site = CmsUtils.getSite(Site.defaultSiteId());
         model.addAttribute("site", site);
 
-        return "modules/cms/front/themes/"+site.getTheme()+"/fontBusiness";
+        return "modules/cms/front/themes/"+site.getTheme()+"/frontBusiness";
     }
 
 }

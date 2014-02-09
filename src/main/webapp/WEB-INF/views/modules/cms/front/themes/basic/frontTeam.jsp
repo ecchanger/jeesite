@@ -1,9 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%@ include file="/WEB-INF/views/modules/cms/front/include/taglib.jsp"%>
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>CLIENTS</title>
+    <title>律师团队 -- 吉林吉翔律师事务所</title>
     <meta charset="utf-8">
     <link rel="icon" href="${ctxStatic}/jilinjixiang/images/favicon.ico">
     <link rel="shortcut icon" href="${ctxStatic}/jilinjixiang/images/favicon.ico" />
@@ -19,24 +18,6 @@
     <link rel="stylesheet" media="screen" href="${ctxStatic}/jilinjixiang/css/ie.css">
 
     <![endif]-->
-    <meta name="decorator" content="cms_default_${site.theme}"/>
-    <meta name="description" content="${article.description} ${category.description}" />
-    <meta name="keywords" content="${article.keywords} ${category.keywords}" />
-    <script type="text/javascript">
-        $(document).ready(function() {
-            if ("${category.allowComment}"=="1" && "${article.articleData.allowComment}"=="1"){
-                $("#comment").show();
-                page(1);
-            }
-        });
-        function page(n,s){
-            $.get("${ctx}/comment",{theme: '${category.site.theme}', 'category.id': '${category.id}',
-                contentId: '${article.id}', title: '${article.title}', pageNo: n, pageSize: s, date: new Date().getTime()
-            },function(data){
-                $("#comment").html(data);
-            });
-        }
-    </script>
 </head>
 <body>
 <!--==============================header=================================-->
@@ -48,8 +29,8 @@
             <div class="menu_block">
                 <nav  class="" >
                     <ul class="sf-menu">
-                        <li class="current"><a href="/f">首页 </a></li>
-                        <li><a href="/f/aboutTeam">律师团队 </a></li>
+                        <li><a href="/f">首页 </a></li>
+                        <li class="current"><a href="/f/aboutTeam">律师团队 </a></li>
                         <li><a href="/f/business">业务领域 </a></li>
                         <li><a href="/f/job">招贤纳士 </a></li>
                         <li><a href="/f/law">诉讼与仲裁 </a></li>
@@ -64,7 +45,36 @@
 </header>
 
 <!--=======content================================-->
-
+<div class="top_block tb1">
+    <div class="container_12">
+        <div class="grid_4">
+            <h2>关于我们</h2>
+            <img src="${ctxStatic}/jilinjixiang/images/page2_img1.jpg" alt="" class="img_inner">
+            <p class="p1">公司专项法律事务、房地产法律事务、建筑工程法律事务。公司专项法律事务、房地产法律事务、建筑工程法律事务。公司专项法律事务、房地产法律事务、建筑工程法律事务。公司专项法律事务、房地产法律事务、建筑工程法律事务<br>
+            <a href="#" class="btn">more</a>
+        </div>
+        <div class="grid_6 prefix_2">
+            <h2>律师团队</h2>
+            <img src="${ctxStatic}/jilinjixiang/images/page2_img2.jpg" alt="" class="img_inner fleft">
+            <div class="extra_wrapper">
+                <div class="text2">张三</div>
+                <a href="#">律师张三的一些简介，律师张三的一些简介，律师张三的一些简介，律师张三的一些简介，律师张三的一些简介，律师张三的一些简介，律师张三的一些简介，律师张三的一些简介。</a>
+            </div>
+            <div class="clear off1"></div>
+            <img src="${ctxStatic}/jilinjixiang/images/page2_img3.jpg" alt="" class="img_inner fleft">
+            <div class="extra_wrapper">
+                <div class="text2">李四</div>
+                <a href="#">律师李四的一些简介，律师李四的一些简介，律师李四的一些简介，律师李四的一些简介，律师李四的一些简介。</a>
+            </div>
+            <div class="clear off1"></div>
+            <img src="${ctxStatic}/jilinjixiang/images/page2_img4.jpg" alt="" class="img_inner fleft">
+            <div class="extra_wrapper">
+                <div class="text2">王五</div>
+                <a href="#">律师王五的一些简介，律师王五的一些简介，律师王五的一些简介，律师王五的一些简介。</a>
+            </div>
+        </div>
+    </div>
+</div>
 <!--==============================footer=================================-->
 
 <footer>

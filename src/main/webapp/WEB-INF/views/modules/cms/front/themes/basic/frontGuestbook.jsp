@@ -114,16 +114,16 @@
 <header>
     <div class="container_12">
         <div class="grid_12">
-            <h1><a href="#"><img src="${ctxStatic}/jilinjixiang/images/logo.png" alt="吉林吉翔律师事务所"></a> </h1><div class="clear"></div>
+            <h1><a href="/f"><img src="${ctxStatic}/jilinjixiang/images/logo.png" alt="吉林吉翔律师事务所"></a> </h1><div class="clear"></div>
 
             <div class="menu_block">
                 <nav  class="" >
                     <ul class="sf-menu">
-                        <li><a href="#">首页 </a></li>
-                        <li><a href="#">律师团队 </a></li>
-                        <li><a href="#">业务领域 </a></li>
-                        <li><a href="#">招贤纳士 </a></li>
-                        <li><a href="#">诉讼与仲裁 </a></li>
+                        <li><a href="/f">首页 </a></li>
+                        <li><a href="/f/aboutTeam">律师团队 </a></li>
+                        <li><a href="/f/business">业务领域 </a></li>
+                        <li><a href="/f/job">招贤纳士 </a></li>
+                        <li><a href="/f/law">诉讼与仲裁 </a></li>
                         <li class="current"><a href="/f/guestbook">联系我们 </a></li>
                     </ul>
                 </nav>
