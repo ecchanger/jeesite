@@ -52,9 +52,9 @@
             <div class="menu_block">
                 <nav  class="" >
                     <ul class="sf-menu">
-                        <li class="current"><a href="/f">首页 </a></li>
+                        <li><a href="/f">首页 </a></li>
                         <li><a href="/f/aboutTeam">律师团队 </a></li>
-                        <li><a href="/f/business">业务领域 </a></li>
+                        <li class="current"><a href="/f/business">业务领域 </a></li>
                         <li><a href="/f/job">招贤纳士 </a></li>
                         <li><a href="/f/law">诉讼与仲裁 </a></li>
                         <li><a href="/f/guestbook">联系我们 </a></li>
@@ -66,28 +66,6 @@
         </div>
     </div>
 </header>
-<div class="top_block">
-    <div class="slider-relative">
-        <div class="slider-block">
-            <div class="slider">
-                <ul class="items">
-                    <li><img src="${ctxStatic}/jilinjixiang/images/slide.jpg" alt="">
-                        <div class="banner">值得信任的经验</div>
-                    </li>
-                    <li><img src="${ctxStatic}/jilinjixiang/images/slide1.jpg" alt="">
-                        <div class="banner">正确选择</div>
-                    </li>
-                    <li><img src="${ctxStatic}/jilinjixiang/images/slide2.jpg" alt="">
-                        <div class="banner">助你一臂之力</div>
-                    </li>
-                    <li><img src="${ctxStatic}/jilinjixiang/images/slide3.jpg" alt="">
-                        <div class="banner">客户第一</div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
     <div class="container_12">
         <div class="grid_4">
             <div class="box"><img src="${ctxStatic}/jilinjixiang/images/l-m-1.jpg" alt=""><a href="#" class="maxheight">融资<img src="${ctxStatic}/jilinjixiang/images/link_bg.png" alt=""></a></div>
@@ -105,7 +83,6 @@
 </div>
 <!--=======content================================-->
 
-JOB
 <!--==============================footer=================================-->
 
 <footer>

@@ -51,26 +51,26 @@
             <h2>关于我们</h2>
             <img src="${ctxStatic}/jilinjixiang/images/page2_img1.jpg" alt="" class="img_inner">
             <p class="p1">公司专项法律事务、房地产法律事务、建筑工程法律事务。公司专项法律事务、房地产法律事务、建筑工程法律事务。公司专项法律事务、房地产法律事务、建筑工程法律事务。公司专项法律事务、房地产法律事务、建筑工程法律事务<br>
-            <a href="#" class="btn">more</a>
+            <%--<a href="#" class="btn">more</a>--%>
         </div>
         <div class="grid_6 prefix_2">
             <h2>律师团队</h2>
             <img src="${ctxStatic}/jilinjixiang/images/page2_img2.jpg" alt="" class="img_inner fleft">
             <div class="extra_wrapper">
                 <div class="text2">张三</div>
-                <a href="#">律师张三的一些简介，律师张三的一些简介，律师张三的一些简介，律师张三的一些简介，律师张三的一些简介，律师张三的一些简介，律师张三的一些简介，律师张三的一些简介。</a>
+                律师张三的一些简介，律师张三的一些简介，律师张三的一些简介，律师张三的一些简介，律师张三的一些简介，律师张三的一些简介，律师张三的一些简介，律师张三的一些简介。
             </div>
             <div class="clear off1"></div>
             <img src="${ctxStatic}/jilinjixiang/images/page2_img3.jpg" alt="" class="img_inner fleft">
             <div class="extra_wrapper">
                 <div class="text2">李四</div>
-                <a href="#">律师李四的一些简介，律师李四的一些简介，律师李四的一些简介，律师李四的一些简介，律师李四的一些简介。</a>
+                律师李四的一些简介，律师李四的一些简介，律师李四的一些简介，律师李四的一些简介，律师李四的一些简介。
             </div>
             <div class="clear off1"></div>
             <img src="${ctxStatic}/jilinjixiang/images/page2_img4.jpg" alt="" class="img_inner fleft">
             <div class="extra_wrapper">
                 <div class="text2">王五</div>
-                <a href="#">律师王五的一些简介，律师王五的一些简介，律师王五的一些简介，律师王五的一些简介。</a>
+                律师王五的一些简介，律师王五的一些简介，律师王五的一些简介，律师王五的一些简介。
             </div>
         </div>
     </div>

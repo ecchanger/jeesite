@@ -52,10 +52,10 @@
             <div class="menu_block">
                 <nav  class="" >
                     <ul class="sf-menu">
-                        <li class="current"><a href="/f">首页 </a></li>
+                        <li><a href="/f">首页 </a></li>
                         <li><a href="/f/aboutTeam">律师团队 </a></li>
                         <li><a href="/f/business">业务领域 </a></li>
-                        <li><a href="/f/job">招贤纳士 </a></li>
+                        <li class="current"><a href="/f/job">招贤纳士 </a></li>
                         <li><a href="/f/law">诉讼与仲裁 </a></li>
                         <li><a href="/f/guestbook">联系我们 </a></li>
                     </ul>
