@@ -327,10 +327,10 @@ header h1 a img {
 }
 
 .text1 {
-	font: 16px/19px Georgia, "Times New Roman", Times, serif;
+	font: 15px/1px Georgia, "Times New Roman", Times, serif;
 	text-transform: uppercase;
 	color: #f74200;
-	margin-bottom: 26px;
+	/*margin-bottom: 26px;*/
 }
 
 .text1 a:hover  {

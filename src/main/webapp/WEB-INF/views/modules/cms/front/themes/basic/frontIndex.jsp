@@ -90,16 +90,16 @@
     </div>
     <div class="container_12">
         <div class="grid_4">
-            <div class="box"><img src="${ctxStatic}/jilinjixiang/images/l-m-1.jpg" alt=""><a href="#" class="maxheight">融资<img src="images/link_bg.png" alt=""></a></div>
+            <div class="box"><img src="${ctxStatic}/jilinjixiang/images/l-m-1.jpg" alt=""><a href="#" class="maxheight">融资<img src="${ctxStatic}/jilinjixiang/images/link_bg.png" alt=""></a></div>
         </div>
         <div class="grid_4">
-            <div class="box"><img src="${ctxStatic}/jilinjixiang/images/l-m-2.jpg" alt=""><a href="#" class="maxheight">房地产建设工程<img src="images/link_bg.png" alt=""></a></div>
+            <div class="box"><img src="${ctxStatic}/jilinjixiang/images/l-m-2.jpg" alt=""><a href="#" class="maxheight">房地产建设工程<img src="${ctxStatic}/jilinjixiang/images/link_bg.png" alt=""></a></div>
         </div>
         <div class="grid_4">
-            <div class="box"><img src="${ctxStatic}/jilinjixiang/images/l-m-3.jpg" alt=""><a href="#" class="maxheight">能源矿产 <img src="images/link_bg.png" alt=""></a></div>
+            <div class="box"><img src="${ctxStatic}/jilinjixiang/images/l-m-3.jpg" alt=""><a href="#" class="maxheight">能源矿产 <img src="${ctxStatic}/jilinjixiang/images/link_bg.png" alt=""></a></div>
         </div>
         <div class="grid_4">
-            <div class="box"><img src="${ctxStatic}/jilinjixiang/images/l-m-4.jpg" alt=""><a href="#" class="maxheight">资本市场证券 <img src="images/link_bg.png" alt=""></a></div>
+            <div class="box"><img src="${ctxStatic}/jilinjixiang/images/l-m-4.jpg" alt=""><a href="#" class="maxheight">资本市场证券 <img src="${ctxStatic}/jilinjixiang/images/link_bg.png" alt=""></a></div>
         </div>
     </div>
 </div>
@@ -110,32 +110,34 @@
     <div class="container_12">
         <div class="grid_4">
             <img src="${ctxStatic}/jilinjixiang/images/l-b-1.jpg" alt="">
-            <div class="text1">这里是新闻标题1...</div>
-            <!-- <p class="col1">这里是新闻内容....</p> -->
-            这里是新闻内容1....
-            <br>
-            <a href="#" class="btn">more</a>
+            <c:forEach items="${fnc:getArticleList(site.id, 6, 2, '')}" var="article">
+                <div class="text1">
+                    <%--<span class="pull-right"><fmt:formatDate value="${article.updateDate}" pattern="yyyy.MM.dd"/></span>--%>
+                    <a href="${article.url}" style="color:${article.color}">${fns:abbr(article.title,28)}</a>
+                </div>
+            </c:forEach>
+            <a href="${ctx}/list-6${urlSuffix}" class="btn">more</a>
         </div>
         <div class="grid_4">
             <img src="${ctxStatic}/jilinjixiang/images/l-b-2.jpg" alt="">
             <div class="text1">这里是新闻标题2</div>
             这里是新闻内容2
             <br>
-            <a href="#" class="btn">more</a>
+            <a href="${ctx}/list-6${urlSuffix}" class="btn">more</a>
         </div>
         <div class="grid_4">
             <img src="${ctxStatic}/jilinjixiang/images/l-b-3.jpg" alt="">
             <div class="text1">这时是新闻标题3</div>
             这里是新闻内容3
             <br>
-            <a href="#" class="btn">more</a>
+            <a href="${ctx}/list-6${urlSuffix}" class="btn">more</a>
         </div>
         <div class="grid_4">
             <img src="${ctxStatic}/jilinjixiang/images/l-b-4.jpg" alt="">
             <div class="text1">这里是新闻标题4</div>
             这里是新闻内容4
             <br>
-            <a href="#" class="btn">more</a>
+            <a href="${ctx}/list-6${urlSuffix}" class="btn">more</a>
         </div>
     </div>
 </div>
@@ -144,11 +146,12 @@
         <div class="grid_8">
             <h5>法律速递</h5>
             <ul>
-                <li><a href="#">法律速递--1</a></li>
-                <li><a href="#">法律速递--2</a></li>
-                <li><a href="#">法律速递--3</a></li>
-                <li><a href="#">法律速递--4 </a></li>
-                <li><a href="#">法律速递--5 </a></li>
+                <c:forEach items="${fnc:getArticleList(site.id, 2, 5, '')}" var="article">
+                    <li>
+                        <%--<span class="pull-right"><fmt:formatDate value="${article.updateDate}" pattern="yyyy.MM.dd"/></span>--%>
+                        <a href="${article.url}" style="color:${article.color}">${fns:abbr(article.title,28)}</a>
+                    </li>
+                </c:forEach>
             </ul>
         </div>
         <div class="grid_6">
