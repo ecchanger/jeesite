@@ -1,9 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%@ include file="/WEB-INF/views/modules/cms/front/include/taglib.jsp"%>
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>CLIENTS</title>
+    <title>律师团队 -- 吉林吉翔律师事务所</title>
     <meta charset="utf-8">
     <link rel="icon" href="${ctxStatic}/jilinjixiang/images/favicon.ico">
     <link rel="shortcut icon" href="${ctxStatic}/jilinjixiang/images/favicon.ico" />
@@ -19,24 +18,6 @@
     <link rel="stylesheet" media="screen" href="${ctxStatic}/jilinjixiang/css/ie.css">
 
     <![endif]-->
-    <meta name="decorator" content="cms_default_${site.theme}"/>
-    <meta name="description" content="${article.description} ${category.description}" />
-    <meta name="keywords" content="${article.keywords} ${category.keywords}" />
-    <script type="text/javascript">
-        $(document).ready(function() {
-            if ("${category.allowComment}"=="1" && "${article.articleData.allowComment}"=="1"){
-                $("#comment").show();
-                page(1);
-            }
-        });
-        function page(n,s){
-            $.get("${ctx}/comment",{theme: '${category.site.theme}', 'category.id': '${category.id}',
-                contentId: '${article.id}', title: '${article.title}', pageNo: n, pageSize: s, date: new Date().getTime()
-            },function(data){
-                $("#comment").html(data);
-            });
-        }
-    </script>
 </head>
 <body>
 <!--==============================header=================================-->
@@ -64,7 +45,20 @@
 </header>
 
 <!--=======content================================-->
+<div class="top_block tb1">
+    <div class="container_12" style="width: 1000px;">
 
+
+            <div class="extra_wrapper">
+                <div class="span10">
+                    <h3 style="color:#fff;font-size:20px;text-align:center;border-bottom:1px solid #ddd;padding-bottom:15px;margin:25px 0;">${article.title}</h3>
+                    <c:if test="${not empty article.description}"><div>摘要：${article.description}</div></c:if>
+                    <div>${article.articleData.content}</div>
+                    <div style="border-top:1px solid #ddd;padding:10px;margin:25px 0;">发布者：${article.createBy.name} &nbsp; 点击数：${article.hits} &nbsp; 发布时间：<fmt:formatDate value="${article.createDate}" pattern="yyyy-MM-dd HH:mm:ss"/> &nbsp; 更新时间：<fmt:formatDate value="${article.updateDate}" pattern="yyyy-MM-dd HH:mm:ss"/></div>
+                </div>
+            </div>
+    </div>
+</div>
 <!--==============================footer=================================-->
 
 <footer>

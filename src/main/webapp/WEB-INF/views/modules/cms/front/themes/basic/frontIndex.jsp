@@ -110,41 +110,41 @@
     <div class="container_12">
         <div class="grid_4">
             <img src="${ctxStatic}/jilinjixiang/images/l-b-1.jpg" alt="">
-            <c:forEach items="${fnc:getArticleList(site.id, 6, 2, '')}" var="article">
+            <c:forEach items="${fnc:getArticleList(site.id, 11, 2, '')}" var="article">
                 <div class="text1">
                     <%--<span class="pull-right"><fmt:formatDate value="${article.updateDate}" pattern="yyyy.MM.dd"/></span>--%>
                     <a href="${article.url}" style="color:${article.color}">${fns:abbr(article.title,28)}</a>
                 </div>
             </c:forEach>
-            <a href="${ctx}/list-6${urlSuffix}" class="btn">more</a>
+            <a href="${ctx}/list-11${urlSuffix}" class="btn">more</a>
         </div>
         <div class="grid_4">
             <img src="${ctxStatic}/jilinjixiang/images/l-b-2.jpg" alt="">
-            <c:forEach items="${fnc:getArticleList(site.id, 6, 2, '')}" var="article">
+            <c:forEach items="${fnc:getArticleList(site.id, 12, 2, '')}" var="article">
                 <div class="text1">
                     <a href="${article.url}" style="color:${article.color}">${fns:abbr(article.title,28)}</a>
                 </div>
             </c:forEach>
-            <a href="${ctx}/list-6${urlSuffix}" class="btn">more</a>
+            <a href="${ctx}/list-12${urlSuffix}" class="btn">more</a>
         </div>
         <div class="grid_4">
             <img src="${ctxStatic}/jilinjixiang/images/l-b-3.jpg" alt="">
-            <c:forEach items="${fnc:getArticleList(site.id, 6, 2, '')}" var="article">
+            <c:forEach items="${fnc:getArticleList(site.id, 13, 2, '')}" var="article">
                 <div class="text1">
                     <a href="${article.url}" style="color:${article.color}">${fns:abbr(article.title,28)}</a>
                 </div>
             </c:forEach>
-            <a href="${ctx}/list-6${urlSuffix}" class="btn">more</a>
+            <a href="${ctx}/list-13${urlSuffix}" class="btn">more</a>
         </div>
         <div class="grid_4">
             <img src="${ctxStatic}/jilinjixiang/images/l-b-4.jpg" alt="">
-            <c:forEach items="${fnc:getArticleList(site.id, 6, 2, '')}" var="article">
+            <c:forEach items="${fnc:getArticleList(site.id, 14, 2, '')}" var="article">
                 <div class="text1">
                         <%--<span class="pull-right"><fmt:formatDate value="${article.updateDate}" pattern="yyyy.MM.dd"/></span>--%>
                     <a href="${article.url}" style="color:${article.color}">${fns:abbr(article.title,28)}</a>
                 </div>
             </c:forEach>
-            <a href="${ctx}/list-6${urlSuffix}" class="btn">more</a>
+            <a href="${ctx}/list-14${urlSuffix}" class="btn">more</a>
         </div>
     </div>
 </div>
@@ -153,7 +153,7 @@
         <div class="grid_8">
             <h5>法律速递</h5>
             <ul>
-                <c:forEach items="${fnc:getArticleList(site.id, 2, 5, '')}" var="article">
+                <c:forEach items="${fnc:getArticleList(site.id, 15, 5, '')}" var="article">
                     <li>
                         <%--<span class="pull-right"><fmt:formatDate value="${article.updateDate}" pattern="yyyy.MM.dd"/></span>--%>
                         <a href="${article.url}" style="color:${article.color}">${fns:abbr(article.title,28)}</a>
