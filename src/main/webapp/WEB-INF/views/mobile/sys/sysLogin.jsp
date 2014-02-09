@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Jeesite Mobile 登录</title>
+		<title>Mobile 登录</title>
 		<%@include file="/WEB-INF/views/mobile/include/head.jsp" %>
 		<script type="text/javascript">
 			$(document).ready(function(){
