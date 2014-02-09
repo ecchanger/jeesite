@@ -120,23 +120,30 @@
         </div>
         <div class="grid_4">
             <img src="${ctxStatic}/jilinjixiang/images/l-b-2.jpg" alt="">
-            <div class="text1">这里是新闻标题2</div>
-            这里是新闻内容2
-            <br>
+            <c:forEach items="${fnc:getArticleList(site.id, 6, 2, '')}" var="article">
+                <div class="text1">
+                    <a href="${article.url}" style="color:${article.color}">${fns:abbr(article.title,28)}</a>
+                </div>
+            </c:forEach>
             <a href="${ctx}/list-6${urlSuffix}" class="btn">more</a>
         </div>
         <div class="grid_4">
             <img src="${ctxStatic}/jilinjixiang/images/l-b-3.jpg" alt="">
-            <div class="text1">这时是新闻标题3</div>
-            这里是新闻内容3
-            <br>
+            <c:forEach items="${fnc:getArticleList(site.id, 6, 2, '')}" var="article">
+                <div class="text1">
+                    <a href="${article.url}" style="color:${article.color}">${fns:abbr(article.title,28)}</a>
+                </div>
+            </c:forEach>
             <a href="${ctx}/list-6${urlSuffix}" class="btn">more</a>
         </div>
         <div class="grid_4">
             <img src="${ctxStatic}/jilinjixiang/images/l-b-4.jpg" alt="">
-            <div class="text1">这里是新闻标题4</div>
-            这里是新闻内容4
-            <br>
+            <c:forEach items="${fnc:getArticleList(site.id, 6, 2, '')}" var="article">
+                <div class="text1">
+                        <%--<span class="pull-right"><fmt:formatDate value="${article.updateDate}" pattern="yyyy.MM.dd"/></span>--%>
+                    <a href="${article.url}" style="color:${article.color}">${fns:abbr(article.title,28)}</a>
+                </div>
+            </c:forEach>
             <a href="${ctx}/list-6${urlSuffix}" class="btn">more</a>
         </div>
     </div>
