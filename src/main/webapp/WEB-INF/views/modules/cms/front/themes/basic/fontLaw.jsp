@@ -105,65 +105,7 @@
 </div>
 <!--=======content================================-->
 
-<div class="content page1">
-    <!-- <div class="ic">这里是新闻</div> -->
-    <div class="container_12">
-        <div class="grid_4">
-            <img src="${ctxStatic}/jilinjixiang/images/l-b-1.jpg" alt="">
-            <c:forEach items="${fnc:getArticleList(site.id, 6, 2, '')}" var="article">
-                <div class="text1">
-                    <%--<span class="pull-right"><fmt:formatDate value="${article.updateDate}" pattern="yyyy.MM.dd"/></span>--%>
-                    <a href="${article.url}" style="color:${article.color}">${fns:abbr(article.title,28)}</a>
-                </div>
-            </c:forEach>
-            <a href="${ctx}/list-6${urlSuffix}" class="btn">more</a>
-        </div>
-        <div class="grid_4">
-            <img src="${ctxStatic}/jilinjixiang/images/l-b-2.jpg" alt="">
-            <div class="text1">这里是新闻标题2</div>
-            这里是新闻内容2
-            <br>
-            <a href="${ctx}/list-6${urlSuffix}" class="btn">more</a>
-        </div>
-        <div class="grid_4">
-            <img src="${ctxStatic}/jilinjixiang/images/l-b-3.jpg" alt="">
-            <div class="text1">这时是新闻标题3</div>
-            这里是新闻内容3
-            <br>
-            <a href="${ctx}/list-6${urlSuffix}" class="btn">more</a>
-        </div>
-        <div class="grid_4">
-            <img src="${ctxStatic}/jilinjixiang/images/l-b-4.jpg" alt="">
-            <div class="text1">这里是新闻标题4</div>
-            这里是新闻内容4
-            <br>
-            <a href="${ctx}/list-6${urlSuffix}" class="btn">more</a>
-        </div>
-    </div>
-</div>
-<div class="bottom_block">
-    <div class="container_12">
-        <div class="grid_8">
-            <h5>法律速递</h5>
-            <ul>
-                <c:forEach items="${fnc:getArticleList(site.id, 2, 5, '')}" var="article">
-                    <li>
-                        <%--<span class="pull-right"><fmt:formatDate value="${article.updateDate}" pattern="yyyy.MM.dd"/></span>--%>
-                        <a href="${article.url}" style="color:${article.color}">${fns:abbr(article.title,28)}</a>
-                    </li>
-                </c:forEach>
-            </ul>
-        </div>
-        <div class="grid_6">
-            <h4>律师成员</h4>
-            <p>王律师：XXXXX一些简介</p>
-            <p>刘律师：XXXXX一些简介</p>
-            <p>张律师：XXXXX一些简介</p>
-            <!-- <span>+1 (234) 4567-890</span> -->
-            <!-- <span>+1 (234) 4567-891</span> -->
-        </div>
-    </div>
-</div>
+LAW
 <!--==============================footer=================================-->
 
 <footer>

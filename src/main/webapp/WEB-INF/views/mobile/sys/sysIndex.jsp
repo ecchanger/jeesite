@@ -2,7 +2,8 @@
 <%@ include file="/WEB-INF/views/include/taglib.jsp"%>
 <html>
 <head>
-	<title>${fns:getConfig('productName')}</title>
+	<%--<title>${fns:getConfig('productName')}</title>--%>
+	<title>吉林吉翔律师事务所</title>
 	<meta name="decorator" content="default_mb"/>
 	<script type="text/javascript"> 
 		$(document).ready(function() {

@@ -104,6 +104,8 @@ img {
 
 address {
 	font-style: normal;
+    margin-top: 40px;
+    font-size: 16px;
 }
 ul {
 	padding: 0;
