@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ include file="/WEB-INF/views/modules/cms/front/include/taglib.jsp"%>
 <html>
 <head>
     <title>吉林吉翔律师事务所</title>
@@ -46,7 +47,7 @@
 <header>
     <div class="container_12">
         <div class="grid_12">
-            <h1><a href="#"><img src="images/logo.png" alt="Gerald Harris attorney at law"></a> </h1><div class="clear"></div>
+            <h1><a href="#"><img src="${ctxStatic}/jilinjixiang/images/logo.png" alt="吉林吉翔律师事务所"></a> </h1><div class="clear"></div>
 
             <div class="menu_block">
                 <nav  class="" >
@@ -70,16 +71,16 @@
         <div class="slider-block">
             <div class="slider">
                 <ul class="items">
-                    <li><img src="images/slide.jpg" alt="">
+                    <li><img src="${ctxStatic}/jilinjixiang/images/slide.jpg" alt="">
                         <div class="banner">值得信任的经验</div>
                     </li>
-                    <li><img src="images/slide1.jpg" alt="">
+                    <li><img src="${ctxStatic}/jilinjixiang/images/slide1.jpg" alt="">
                         <div class="banner">正确选择</div>
                     </li>
-                    <li><img src="images/slide2.jpg" alt="">
+                    <li><img src="${ctxStatic}/jilinjixiang/images/slide2.jpg" alt="">
                         <div class="banner">助你一臂之力</div>
                     </li>
-                    <li><img src="images/slide3.jpg" alt="">
+                    <li><img src="${ctxStatic}/jilinjixiang/images/slide3.jpg" alt="">
                         <div class="banner">客户第一</div>
                     </li>
                 </ul>
@@ -89,16 +90,16 @@
     </div>
     <div class="container_12">
         <div class="grid_4">
-            <div class="box"><img src="images/l-m-1.jpg" alt=""><a href="#" class="maxheight">融资<img src="images/link_bg.png" alt=""></a></div>
+            <div class="box"><img src="${ctxStatic}/jilinjixiang/images/l-m-1.jpg" alt=""><a href="#" class="maxheight">融资<img src="images/link_bg.png" alt=""></a></div>
         </div>
         <div class="grid_4">
-            <div class="box"><img src="images/l-m-2.jpg" alt=""><a href="#" class="maxheight">房地产建设工程<img src="images/link_bg.png" alt=""></a></div>
+            <div class="box"><img src="${ctxStatic}/jilinjixiang/images/l-m-2.jpg" alt=""><a href="#" class="maxheight">房地产建设工程<img src="images/link_bg.png" alt=""></a></div>
         </div>
         <div class="grid_4">
-            <div class="box"><img src="images/l-m-3.jpg" alt=""><a href="#" class="maxheight">能源矿产 <img src="images/link_bg.png" alt=""></a></div>
+            <div class="box"><img src="${ctxStatic}/jilinjixiang/images/l-m-3.jpg" alt=""><a href="#" class="maxheight">能源矿产 <img src="images/link_bg.png" alt=""></a></div>
         </div>
         <div class="grid_4">
-            <div class="box"><img src="images/l-m-4.jpg" alt=""><a href="#" class="maxheight">资本市场证券 <img src="images/link_bg.png" alt=""></a></div>
+            <div class="box"><img src="${ctxStatic}/jilinjixiang/images/l-m-4.jpg" alt=""><a href="#" class="maxheight">资本市场证券 <img src="images/link_bg.png" alt=""></a></div>
         </div>
     </div>
 </div>
@@ -108,7 +109,7 @@
     <!-- <div class="ic">这里是新闻</div> -->
     <div class="container_12">
         <div class="grid_4">
-            <img src="images/l-b-1.jpg" alt="">
+            <img src="${ctxStatic}/jilinjixiang/images/l-b-1.jpg" alt="">
             <div class="text1">这里是新闻标题1...</div>
             <!-- <p class="col1">这里是新闻内容....</p> -->
             这里是新闻内容1....
@@ -116,21 +117,21 @@
             <a href="#" class="btn">more</a>
         </div>
         <div class="grid_4">
-            <img src="images/l-b-2.jpg" alt="">
+            <img src="${ctxStatic}/jilinjixiang/images/l-b-2.jpg" alt="">
             <div class="text1">这里是新闻标题2</div>
             这里是新闻内容2
             <br>
             <a href="#" class="btn">more</a>
         </div>
         <div class="grid_4">
-            <img src="images/l-b-3.jpg" alt="">
+            <img src="${ctxStatic}/jilinjixiang/images/l-b-3.jpg" alt="">
             <div class="text1">这时是新闻标题3</div>
             这里是新闻内容3
             <br>
             <a href="#" class="btn">more</a>
         </div>
         <div class="grid_4">
-            <img src="images/l-b-4.jpg" alt="">
+            <img src="${ctxStatic}/jilinjixiang/images/l-b-4.jpg" alt="">
             <div class="text1">这里是新闻标题4</div>
             这里是新闻内容4
             <br>
